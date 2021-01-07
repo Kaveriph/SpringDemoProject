@@ -10,10 +10,8 @@ public class FirstProjectApplication {
 	public static void main(String[] args) {
 	ConfigurableApplicationContext context =  SpringApplication.run(FirstProjectApplication.class, args);
 		System.out.println("Welcome to boot");
-		/*
-		 * Alien a1 = context.getBean(Alien.class); a1.show(); Alien a2 =
-		 * context.getBean(Alien.class); a2.show();
-		 */
+		Alien a1 = context.getBean(Alien.class);
+		a1.show();
 	}
 
 }
